@@ -1,11 +1,7 @@
 #!/usr/bin/env python3
-# import re
-# import os
 import sys
 import praw  # pylint: disable=import-error
-# import json
 import sqlite3
-# import requests  # pylint: disable=import-error
 import my_strings as ms
 import helpers as h  # pylint: disable=import-error
 
