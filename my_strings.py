@@ -1,7 +1,7 @@
-USER_AGENT = 'MFAQuickLinks'
-BATSIGNAL = '!MFAQuickLink'
+USER_AGENT = "MFAQuickLinks"
+BATSIGNAL = "!MFAQuickLink"
 
-DB_FILE = 'mfaql.db'
+DB_FILE = "mfaql.db"
 SUBREDDIT_NAME = "malefashionadvice"
 
 TODO_TEXT = "Sorry, this function has not been implemented yet.\n\n"
@@ -10,7 +10,7 @@ HELP_TEXT = (f"Usage: I respond to comments starting with `{BATSIGNAL}` (case in
              f"`{BATSIGNAL} faq`: links to the MFA FAQ  \n"
              f"`{BATSIGNAL} bb`: links to The Basic Bastard guides  \n"
              f"`{BATSIGNAL} acronyms`: links to the glossary/acronym list  \n"
-             f"`{BATSIGNAL} items`: links to the \"Your Favorite ___ for $___\" mega-threads  \n
+             f"`{BATSIGNAL} items`: links to the \"Your Favorite ___ for $___\" mega-threads  \n"
              )
 FAQ_TEXT = ("The /r/malefashionadvice FAQ:  \n"
             "https://www.reddit.com/r/malefashionadvice/wiki/faq"
@@ -26,11 +26,11 @@ ITEMS_TEXT = ("The /r/malefashionadvice Your Favorite ___ for $___ mega threads:
             "https://www.reddit.com/r/malefashionadvice/wiki/itemguides#wiki_item_suggestions_at_each_price_point")
 
 COMMANDS_MAP = {
-        'help': HELP_TEXT,
-        'faq': FAQ_TEXT,
-        'bb': BB_TEXT,
-        'acronyms': ACRONYMS_TEXT,
-        'items': ITEMS_TEXT
+        "help": HELP_TEXT,
+        "faq": FAQ_TEXT,
+        "bb": BB_TEXT,
+        "acronyms": ACRONYMS_TEXT,
+        "items": ITEMS_TEXT
 }
 
 TAIL = ("\n\n---\nI am a bot! If you've found a bug you can open an issue "
