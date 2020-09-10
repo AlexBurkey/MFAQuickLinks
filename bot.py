@@ -66,8 +66,11 @@ def check_has_responded(comment):
     # UPDATE: We keep all comments in the DB, but update the value if responded.
     conn = sqlite3.connect(DB_FILE)
     cur = conn.cursor()
-    cur.execute("SELECT * FROM comments WHERE comment_hash=:hash AND has_responded=1", {"hash": comment.id})
-    val = (cur.fetchone() is not None)
+    cur.execute(
+        "SELECT * FROM comments WHERE comment_hash=:hash AND has_responded=1",
+        {"hash": comment.id},
+    )
+    val = cur.fetchone() is not None
     conn.close()
     return val
 
@@ -83,7 +86,10 @@ def add_comment_to_db(db_dict):
     conn = sqlite3.connect(DB_FILE)
     cur = conn.cursor()
     # https://stackoverflow.com/questions/19337029/insert-if-not-exists-statement-in-sqlite
-    cur.execute("INSERT OR REPLACE INTO comments VALUES (:hash, :has_responded, :response_text)", db_dict)
+    cur.execute(
+        "INSERT OR REPLACE INTO comments VALUES (:hash, :has_responded, :response_text)",
+        db_dict,
+    )
     conn.commit()
     conn.close()
 
@@ -92,12 +98,14 @@ def db_setup(db_file):
     print("Setting up DB...")
     conn = sqlite3.connect(db_file)
     cur = conn.cursor()
-    cur.execute("""CREATE TABLE IF NOT EXISTS comments (
+    cur.execute(
+        """CREATE TABLE IF NOT EXISTS comments (
         comment_hash  TEXT       NOT NULL  UNIQUE,
         has_responded INTEGER    DEFAULT 0,
         response_text TEXT       DEFAULT NULL,
         CHECK(has_responded = 0 OR has_responded = 1)
-    )""")
+        )"""
+    )
     conn.commit()
     conn.close()
     print("Done!")

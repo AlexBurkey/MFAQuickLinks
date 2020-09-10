@@ -58,7 +58,7 @@ def reply_and_upvote(c, response, respond=False):
     return {"hash": c.id, "has_responded": respond, "response_text": response}
 
 
-### Unused
+# ~~~ Unused ~~~
 def get_index_from_string(str):
     """
     Wrap this in a try-except because I don't like the error message
