@@ -24,8 +24,9 @@ def is_imgur_url(s):
     return re.match(
         r"^(?i:https?://(?:[^/:]+\.)?imgur\.com)(:\d+)?"
         r"/(?:(?P<album>a/)|(?P<gallery>gallery/))?(?P<id>\w+)",
-        s
+        s,
     )
+
 
 def get_and_split_first_line(string):
     """
@@ -34,6 +35,7 @@ def get_and_split_first_line(string):
     TODO: doctests
     """
     return string.splitlines()[0].lower().replace(",", " ").split()
+
 
 def reply_and_upvote(c, response, respond=False):
     """
@@ -76,12 +78,5 @@ def get_index_from_string(str):
     try:
         index = int(str)
     except ValueError:
-        raise ValueError(f"Sorry, '{str}' doesn\'t look like an integer to me.")
+        raise ValueError(f"Sorry, '{str}' doesn't look like an integer to me.")
     return index
-
-
-def is_number_list(string):
-    """
-    Trying to build a method to check for lists for numbers
-    """
-    match = re.match(r"^[1-9]+(,[1-9]+)*$", string)
