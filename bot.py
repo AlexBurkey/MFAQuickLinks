@@ -51,7 +51,7 @@ def check_batsignal(comment_body):
     False
     """
     text = comment_body.lower()
-    return text.startswith(ms.BATSIGNAL)
+    return text.startswith(ms.BATSIGNAL.lower())
 
 
 def check_has_responded(comment):
