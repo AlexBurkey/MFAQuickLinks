@@ -1,4 +1,4 @@
-USER_AGENT = "MFAQuickLinks"
+USER_AGENT = "MFAQuickLinksBot"
 BATSIGNAL = "!MFAQuickLink"
 
 DB_FILE = "mfaql.db"
