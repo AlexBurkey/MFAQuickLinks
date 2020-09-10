@@ -2,12 +2,12 @@
 import re
 import os
 import sys
-import praw
+import praw  # pylint: disable=import-error
 import json
 import sqlite3
-import requests
+import requests  # pylint: disable=import-error
 import my_strings as ms
-import helpers as h
+import helpers as h  # pylint: disable=import-error
 
 
 def run():
@@ -77,9 +77,9 @@ def add_comment_to_db(db_dict):
     Adds the comment and its info to the database
     """
     # print(f"Hash: {db_dict["hash"]}")
-    print(f"Has responded: {db_dict["has_responded"]}")
+    print(f"Has responded: {db_dict['has_responded']}")
     print(f"Response text: ")
-    print(f"{db_dict["response_text"]}")
+    print(f"{db_dict['response_text']}")
     conn = sqlite3.connect(DB_FILE)
     cur = conn.cursor()
     # https://stackoverflow.com/questions/19337029/insert-if-not-exists-statement-in-sqlite

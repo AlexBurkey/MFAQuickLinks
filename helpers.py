@@ -76,7 +76,7 @@ def get_index_from_string(str):
     try:
         index = int(str)
     except ValueError:
-        raise ValueError(f"Sorry, "{str}" doesn\'t look like an integer to me.")
+        raise ValueError(f"Sorry, '{str}' doesn\'t look like an integer to me.")
     return index
 
 
