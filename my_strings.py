@@ -11,7 +11,7 @@ HELP_TEXT = (
     f"`{BATSIGNAL} faq`: links to the MFA FAQ  \n"
     f"`{BATSIGNAL} bb`: links to The Basic Bastard guides  \n"
     f"`{BATSIGNAL} acronyms`: links to the glossary/acronym list  \n"
-    f"`{BATSIGNAL} items`: links to the \"Your Favorite ___ for $___\" mega-threads  \n"
+    f'`{BATSIGNAL} items`: links to the "Your Favorite ___ for $___" mega-threads  \n'
 )
 FAQ_TEXT = (
     "The /r/malefashionadvice FAQ:  \n"
@@ -43,8 +43,8 @@ COMMANDS_MAP = {
 
 TAIL = (
     "\n\n---\nI am a bot! If you've found a bug you can open an issue "
-    "[here.](https://github.com/AlexBurkey/MFAImageBot/issues/new?template=bug_report.md)  \n"
+    "[here.](https://github.com/AlexBurkey/MFAQuickLinks/issues/new?template=bug_report.md)  \n"
     "If you have an idea for a feature, you can submit the idea "
-    "[here](https://github.com/AlexBurkey/MFAImageBot/issues/new?template=feature_request.md)  \n"
-    "Version 1.2"
+    "[here](https://github.com/AlexBurkey/MFAQuickLinks/issues/new?template=feature_request.md)  \n"
+    "Version 1.0"
 )
