@@ -25,7 +25,7 @@ def run():
             
             # For now just taking the 2nd token. First should be the batsignal
             command = tokens[1]
-            reponse = ms.COMMANDS_MAP.get(command, ms.HELP_TEXT)
+            response = ms.COMMANDS_MAP.get(command, ms.HELP_TEXT)
             db_obj = h.reply_and_upvote(comment, response=response, respond=RESPOND)
             add_comment_to_db(db_obj)
 
