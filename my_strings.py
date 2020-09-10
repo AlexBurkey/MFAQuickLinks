@@ -10,6 +10,7 @@ HELP_TEXT = (f"Usage: I respond to comments starting with `{BATSIGNAL}` (case in
              f"`{BATSIGNAL} faq`: links to the MFA FAQ  \n"
              f"`{BATSIGNAL} bb`: links to The Basic Bastard guides  \n"
              f"`{BATSIGNAL} acronyms`: links to the glossary/acronym list  \n"
+             f"`{BATSIGNAL} items`: links to the \"Your Favorite ___ for $___\" mega-threads  \n
              )
 FAQ_TEXT = ("The /r/malefashionadvice FAQ:  \n"
             "https://www.reddit.com/r/malefashionadvice/wiki/faq"
