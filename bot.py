@@ -35,15 +35,15 @@ def check_batsignal(comment_body):
     Returns True if the comment body starts with the batsignal "!mfaimagebot". Otherwise False.
     Case insensitive.
 
-    >>> check_batsignal("!QuickLink test")
+    >>> check_batsignal("!MFAQuickLink test")
     True
-    >>> check_batsignal("!quicklink test")
+    >>> check_batsignal("!mfaquicklink test")
     True
-    >>> check_batsignal("!QuIcKlInK test")
+    >>> check_batsignal("!MfAQuIcKlInK test")
     True
-    >>> check_batsignal("!QuickLink")
+    >>> check_batsignal("!MFAQuickLink")
     True
-    >>> check_batsignal(" !QuickLink test")
+    >>> check_batsignal(" !MFAQuickLink test")
     False
     >>> check_batsignal("!Test test")
     False
